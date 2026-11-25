@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow" data-podglad>
+<title>Wydawnictwo GM Jaworzno - tygodnik Co Tydzień, jaw.pl, ctmyslowice.pl, dlaCiebie.tv</title>
+<meta name="description" content="Wydawnictwo GM z Jaworzna: tygodnik Co Tydzień (od 1991), portale jaw.pl i ctmyslowice.pl, telewizja dlaCiebie.tv. Reklama w prasie, portalach i telewizji. Tel. 32 751 91 30.">
+<meta name="theme-color" content="#1D5BA6">
+<meta property="og:title" content="Wydawnictwo GM - lokalne media Jaworzna i Mysłowic">
+<meta property="og:description" content="Tygodnik Co Tydzień, portale jaw.pl i ctmyslowice.pl, telewizja dlaCiebie.tv. Aby nasze miasto było lepsze.">
+<meta property="og:image" content="img/jaworzno.webp">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%231D5BA6'/%3E%3Cpath d='M12 18h40M12 46h40' stroke='%23F6D24A' stroke-width='4'/%3E%3Ctext x='32' y='40' font-family='Georgia,serif' font-size='22' font-weight='700' fill='%23fff' text-anchor='middle'%3ECT%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="fonts/lora-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/jaworzno.webp">
+<style>
+@font-face{font-family:"Lora";font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/lora-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026}
+@font-face{font-family:"Lora";font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/lora-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"Archivo";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/archivo-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013,U+2018-2019,U+201C-201E,U+2026}
+@font-face{font-family:"Archivo";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/archivo-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+:root{--nb:#1D5BA6;--nb2:#164A8A;--gr:#0F2547;--zo:#F6D24A;--cy:#28A8D8;--sz:#F1F3F6;--li:#D9DEE6;--tx:#3B4350;--cz:#111722}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:70px}
+body{margin:0;font-family:Archivo,system-ui,sans-serif;color:var(--cz);background:#fff;font-size:16.5px;line-height:1.6;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.wrap{width:min(1200px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:Lora,Georgia,serif;font-weight:700;line-height:1.12;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(30px,3.8vw,46px)}
+h3{font-size:22px}
+p{margin:0 0 1em;color:var(--tx)}
+:focus-visible{outline:3px solid var(--zo);outline-offset:3px}
+/* lamy gazety: podwojna linia jak pod winieta tygodnika */
+.lam{border:0;height:5px;margin:0;border-top:3px solid var(--cz);border-bottom:1px solid var(--cz)}
+.sek{padding:clamp(64px,8vw,110px) 0}
+.sek-tyt{display:grid;grid-template-columns:1fr;gap:16px;margin-bottom:44px;max-width:780px}
+.sek-tyt .lam{width:120px}
+.sek-tyt p{font-size:18px;margin:4px 0 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border:2px solid var(--nb);background:var(--nb);color:#fff;font-weight:700;font-size:16px;text-decoration:none;border-radius:4px;transition:background .2s,border-color .2s,color .2s}
+.btn:hover{background:var(--nb2);border-color:var(--nb2)}
+.btn.jasny{background:#fff;color:var(--nb)}
+.btn.jasny:hover{background:var(--sz)}
+.btn.zolty{background:var(--zo);border-color:var(--zo);color:var(--cz)}
+.btn.zolty:hover{background:#ffe07a;border-color:#ffe07a}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* naglowek */
+.pasek{background:var(--gr);color:#C9D3E3;font-size:13.5px}
+.pasek .wrap{display:flex;justify-content:space-between;gap:16px;min-height:36px;align-items:center}
+.pasek a{text-decoration:none;color:#fff}
+.pasek .miasta{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+header.top{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--li)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;min-height:70px;gap:20px}
+.marka{display:flex;flex-direction:column;text-decoration:none;line-height:1.05}
+.marka b{font-family:Lora,Georgia,serif;font-size:25px;color:var(--cz);letter-spacing:-.01em}
+.marka b i{font-style:normal;color:var(--nb)}
+.marka span{font-size:12.5px;color:var(--tx);margin-top:5px;letter-spacing:.01em}
+nav.menu{display:flex;align-items:center;gap:26px}
+nav.menu a{text-decoration:none;font-weight:600;font-size:15.5px;padding:6px 0;border-bottom:2px solid transparent}
+nav.menu a:hover{border-color:var(--nb)}
+nav.menu a.akt{border-color:var(--zo)}
+nav.menu .btn{min-height:44px;padding:0 18px;border-bottom:2px solid var(--nb)}
+.burger{display:none;width:46px;height:46px;border:1px solid var(--li);background:#fff;border-radius:4px;cursor:pointer;padding:0}
+.burger span{display:block;width:22px;height:2px;background:var(--cz);margin:5px auto}
+.burger span:nth-child(2){width:14px;margin-left:12px}
+
+/* pierwszy ekran: pierwsza strona wydania */
+.hero{padding:34px 0 46px;border-bottom:1px solid var(--li)}
+.hero-sz{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.12fr);gap:0;align-items:stretch}
+.hero-tekst{padding-right:40px;border-right:1px solid var(--cz);display:flex;flex-direction:column;justify-content:center}
+.wydanie{display:flex;gap:14px;flex-wrap:wrap;font-size:13.5px;color:var(--tx);margin-bottom:18px;font-weight:600}
+.wydanie span+span:before{content:"";display:inline-block;width:5px;height:5px;background:var(--nb);margin:0 12px 2px 0}
+.hero h1{font-size:clamp(34px,3.6vw,52px);line-height:1.06;margin-bottom:20px}
+.hero .lead{font-size:clamp(17px,1.35vw,19.5px);color:var(--tx);margin-bottom:28px;max-width:560px}
+.hero .lead b{color:var(--cz)}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero-foto{padding-left:40px;display:grid;grid-template-columns:1fr 1fr;gap:12px;align-content:center}
+.hero-foto figure{margin:0;position:relative;overflow:hidden;background:var(--sz)}
+.hero-foto figure:first-child{grid-column:1/3;aspect-ratio:1200/646}
+.hero-foto figure+figure{aspect-ratio:4/3}
+.hero-foto img{width:100%;height:100%;object-fit:cover}
+.hero-foto figcaption{position:absolute;left:0;bottom:0;background:#fff;color:var(--cz);font-size:13px;font-weight:600;padding:6px 10px;border-top:3px solid var(--zo)}
+
+/* media */
+.media{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:3px solid var(--cz)}
+.medium{padding:28px 26px 30px;border-right:1px solid var(--li);display:flex;flex-direction:column}
+.medium:first-child{padding-left:0}
+.medium:last-child{border-right:0;padding-right:0}
+.tablica{height:92px;display:flex;align-items:center;justify-content:flex-start;margin-bottom:22px}
+.tablica img{max-height:64px;width:auto}
+.tablica.ciemna{background:var(--gr);padding:0 18px;border-radius:3px}
+.tablica.ciemna img{max-height:52px}
+.winieta{font-family:Lora,Georgia,serif;font-size:40px;font-weight:700;color:var(--nb);line-height:1;letter-spacing:-.02em;border-top:3px solid var(--cz);border-bottom:1px solid var(--cz);padding:10px 0 8px;width:100%}
+.medium .od{font-size:13.5px;font-weight:700;color:var(--nb);margin-bottom:8px}
+.medium h3{margin-bottom:12px}
+.medium p{font-size:15.5px}
+.medium ul{list-style:none;margin:0 0 20px;padding:0;font-size:15px;color:var(--tx)}
+.medium li{padding:7px 0;border-top:1px solid var(--li)}
+.medium .lnk{margin-top:auto;font-weight:700;color:var(--nb);text-decoration:none;display:inline-flex;gap:8px;align-items:center}
+.medium .lnk:hover{text-decoration:underline}
+
+/* reklama */
+.szary{background:var(--sz)}
+.formaty{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;background:#fff;border:1px solid var(--li)}
+.format{padding:30px 28px;border-right:1px solid var(--li);border-bottom:1px solid var(--li)}
+.format:nth-child(3n){border-right:0}
+.format:nth-last-child(-n+3){border-bottom:0}
+.format .nr{font-family:Lora,Georgia,serif;font-size:42px;font-weight:700;color:var(--nb);line-height:1;display:block;margin-bottom:14px}
+.format h3{font-size:21px;margin-bottom:8px}
+.format p{font-size:15.5px;margin:0}
+.format.pakiet{background:var(--nb);color:#fff}
+.format.pakiet p{color:#DCE6F5}
+.format.pakiet .nr{color:var(--zo)}
+.format.pakiet .btn{margin-top:18px;min-height:46px}
+
+/* galeria */
+.gal{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:14px;cursor:grab;scrollbar-width:thin}
+.gal.ciag{cursor:grabbing;scroll-snap-type:none}
+.gal figure{margin:0;flex:0 0 min(560px,82vw);scroll-snap-align:start}
+.gal img{width:100%;aspect-ratio:1200/646;object-fit:cover;user-select:none;-webkit-user-drag:none}
+.gal-nav{display:flex;gap:10px;justify-content:flex-end;margin-top:6px}
+.gal-nav button{width:48px;height:48px;border:1px solid var(--cz);background:#fff;cursor:pointer;font-size:20px;border-radius:4px}
+.gal-nav button:hover{background:var(--zo);border-color:var(--zo)}
+.zrodlo{font-size:14px;color:var(--tx);margin-top:10px}
+
+/* historia */
+.hist{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));border-top:3px solid var(--cz)}
+.rok{padding:22px 18px 10px;border-right:1px solid var(--li)}
+.rok:first-child{padding-left:0}
+.rok:last-child{border-right:0}
+.rok b{font-family:Lora,Georgia,serif;font-size:36px;color:var(--nb);display:block;line-height:1;margin-bottom:12px}
+.rok h3{font-size:18px;margin-bottom:8px}
+.rok p{font-size:15px}
+.rok.wyr b{color:var(--cz);background:var(--zo);display:inline-block;padding:4px 6px}
+
+/* 3d */
+.ciemna-sek{background:var(--gr);color:#fff}
+.ciemna-sek h2{color:#fff}
+.ciemna-sek p{color:#C3CEDF}
+.ciemna-sek .lam{border-color:var(--zo)}
+.tech{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid rgba(255,255,255,.25)}
+.tech div{padding:28px 24px 10px 0;border-right:1px solid rgba(255,255,255,.18);margin-right:24px}
+.tech div:last-child{border-right:0;margin-right:0}
+.tech b{font-family:Lora,Georgia,serif;font-size:15px;color:var(--zo);display:block;margin-bottom:12px}
+.tech h3{font-size:21px;margin-bottom:10px;color:#fff}
+.tech p{font-size:15.5px}
+
+/* kontakt */
+.kontakt{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px}
+.dane{list-style:none;margin:0 0 26px;padding:0;border-top:3px solid var(--cz)}
+.dane li{display:grid;grid-template-columns:150px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--li);font-size:16px}
+.dane li span{font-size:13.5px;font-weight:700;color:var(--tx)}
+.dane a{font-weight:700;color:var(--nb);text-decoration:none;word-break:break-word}
+.mapa{width:100%;height:300px;border:0;display:block;filter:grayscale(.15)}
+form.zap{background:var(--sz);padding:30px;border-top:3px solid var(--nb)}
+form.zap h3{margin-bottom:6px}
+form.zap p{font-size:15px}
+.pole{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+.pole label{font-size:14px;font-weight:700}
+.pole input,.pole select,.pole textarea{font:inherit;font-size:16px;padding:12px 14px;border:1px solid #B9C2CF;border-radius:3px;background:#fff;width:100%}
+.pole textarea{min-height:120px;resize:vertical}
+.dwa{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.zgoda{font-size:13.5px;color:var(--tx);display:flex;gap:10px;align-items:flex-start;margin:4px 0 18px}
+.zgoda input{margin-top:4px}
+.info{font-size:14px;margin:12px 0 0;color:var(--nb2);font-weight:600;min-height:1em}
+
+footer{background:var(--cz);color:#AEB7C4;padding:48px 0 28px;font-size:15px}
+.stopka{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px;padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,.14)}
+footer h4{color:#fff;font-family:Lora,Georgia,serif;font-size:19px;margin:0 0 12px}
+footer a{color:#fff;text-decoration:none}
+footer ul{list-style:none;margin:0;padding:0}
+footer li{padding:3px 0}
+.dol{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:22px;font-size:14px}
+
+@media (max-width:1100px){
+ .media{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .medium:nth-child(2){border-right:0;padding-right:0}
+ .medium:nth-child(3){padding-left:0;border-top:1px solid var(--li)}
+ .medium:nth-child(4){border-top:1px solid var(--li)}
+ .hist{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .rok:nth-child(3){border-right:0}
+ .rok:nth-child(4){padding-left:0}
+ .tech{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .tech div:nth-child(2){border-right:0;margin-right:0}
+}
+@media (max-width:900px){
+ nav.menu{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:8px 20px 20px;border-bottom:3px solid var(--cz)}
+ nav.menu.otw{display:flex}
+ nav.menu a{padding:14px 0;border-bottom:1px solid var(--li)}
+ nav.menu .btn{margin-top:14px}
+ .burger{display:block}
+ .hero-sz{grid-template-columns:1fr}
+ .hero-tekst{padding-right:0;border-right:0}
+ .hero-foto{padding-left:0;margin-top:30px}
+ .formaty{grid-template-columns:1fr 1fr}
+ .format:nth-child(3n){border-right:1px solid var(--li)}
+ .format:nth-child(2n){border-right:0}
+ .format:nth-last-child(-n+3){border-bottom:1px solid var(--li)}
+ .format:nth-last-child(-n+2){border-bottom:0}
+ .kontakt{grid-template-columns:1fr}
+ .stopka{grid-template-columns:1fr 1fr}
+ .stopka>div:first-child{grid-column:1/3}
+}
+@media (max-width:640px){
+ body{font-size:16px}
+ .pasek .miasta{display:none}
+ .pasek .wrap{justify-content:center}
+ header.top .wrap{min-height:62px}
+ .marka b{font-size:21px}
+ .marka span{font-size:11.5px}
+ /* telefon: zdjecie na gorze, potem tytul i przyciski w jednym oknie */
+ .hero{padding:0 0 34px}
+ .hero .wrap{width:100%}
+ .hero-sz{display:flex;flex-direction:column}
+ .hero-foto{order:-1;margin:0;display:block;height:clamp(150px,27svh,215px)}
+ .hero-foto figure,.hero-foto figure:first-child{height:100%;aspect-ratio:auto}
+ .hero-foto figure+figure{display:none}
+ .hero-tekst{padding:18px 20px 0}
+ .wydanie{font-size:12.5px;margin-bottom:10px;gap:8px}
+ .wydanie span+span:before{margin-right:8px}
+ .hero h1{font-size:clamp(27px,7.6vw,32px);margin-bottom:12px}
+ .hero .lead{font-size:16px;margin-bottom:24px;line-height:1.5}
+ .cta{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+ .cta .btn{padding:0 10px;font-size:15px;min-height:50px}
+ .media{grid-template-columns:1fr}
+ .medium,.medium:nth-child(n){padding:26px 0;border-right:0;border-top:1px solid var(--li)}
+ .medium:first-child{border-top:0}
+ .formaty{grid-template-columns:1fr}
+ .format,.format:nth-child(n){border-right:0;border-bottom:1px solid var(--li)}
+ .format:last-child{border-bottom:0}
+ .hist{grid-template-columns:1fr 1fr}
+ .rok,.rok:nth-child(n){padding:20px 14px 6px 0;border-right:0;border-bottom:1px solid var(--li)}
+ .rok:nth-child(odd){border-right:1px solid var(--li)}
+ .rok:nth-child(even){padding-left:14px}
+ .rok b{font-size:30px}
+ .tech{grid-template-columns:1fr}
+ .tech div,.tech div:nth-child(n){border-right:0;margin-right:0;border-bottom:1px solid rgba(255,255,255,.18);padding:22px 0 8px}
+ .dane li{grid-template-columns:1fr;gap:2px}
+ .dwa{grid-template-columns:1fr;gap:0}
+ form.zap{padding:24px 18px}
+ .stopka{grid-template-columns:1fr 1fr;gap:24px}
+}
+@media (max-width:360px){.cta .btn{font-size:14px}.hero h1{font-size:26px}}
+</style>
+</head>
+<body>
+<div class="pasek"><div class="wrap"><span class="miasta">Jaworzno · Mysłowice · Imielin · Chełm Śląski</span><a href="tel:+48327519130">Biuro i redakcja: 32 751 91 30</a></div></div>
+<header class="top">
+ <div class="wrap">
+  <a class="marka" href="#top" aria-label="Wydawnictwo GM - strona główna"><b>Wydawnictwo <i>GM</i></b><span>Co Tydzień · jaw.pl · ctmyslowice.pl · dlaCiebie.tv</span></a>
+  <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  <nav class="menu" id="menu" aria-label="Menu główne">
+   <a href="#top" class="akt">Start</a>
+   <a href="#media">Nasze media</a>
+   <a href="#reklama">Reklama</a>
+   <a href="#historia">Historia</a>
+   <a href="#technologie">3D i hologramy</a>
+   <a class="btn" href="#kontakt">Kontakt</a>
+  </nav>
+ </div>
+</header>
+
+<main id="top">
+<section class="hero">
+ <div class="wrap hero-sz">
+  <div class="hero-tekst">
+   <div class="wydanie"><span>Tygodnik od 1991 roku</span><span>Portale</span><span>Telewizja</span></div>
+   <h1>Lokalne media w Jaworznie i Mysłowicach, aby nasze miasto było lepsze</h1>
+   <p class="lead">Tygodnik <b>Co Tydzień</b>, portale <b>jaw.pl</b> i <b>ctmyslowice.pl</b> oraz telewizja <b>dlaCiebie.tv</b>. Piszemy i nadajemy dla mieszkańców, a firmom dajemy reklamę, którą tu się czyta i ogląda.</p>
+   <div class="cta">
+    <a class="btn" href="#reklama">Zamów reklamę</a>
+    <a class="btn jasny" href="tel:+48327519130"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6.5 3.5h3l1.5 4-2 1.5a11 11 0 0 0 6 6l1.5-2 4 1.5v3a2 2 0 0 1-2 2A16 16 0 0 1 4.5 5.5a2 2 0 0 1 2-2z"/></svg>32 751 91 30</a>
+   </div>
+  </div>
+  <div class="hero-foto">
+   <figure><img src="img/jaworzno.webp" width="1200" height="646" alt="Jaworzno z lotu ptaka" fetchpriority="high"><figcaption>Jaworzno</figcaption></figure>
+   <figure><img src="img/gornicy-640.webp" width="640" height="345" alt="Górnicy pod ziemią, zdjęcie z portalu jaw.pl" loading="lazy"></figure>
+   <figure><img src="img/biblioteka-640.webp" width="640" height="345" alt="Wejście do Miejskiej Biblioteki Publicznej w Jaworznie" loading="lazy"></figure>
+  </div>
+ </div>
+</section>
+
+<section class="sek" id="media">
+ <div class="wrap">
+  <div class="sek-tyt"><hr class="lam"><h2>Prasa, portale i telewizja</h2><p>Cztery kanały, jedna redakcja. Mieszkańców Jaworzna, Mysłowic, Imielina i Chełmu Śląskiego spotykamy w kiosku, w telefonie i w telewizorze.</p></div>
+  <div class="media">
+   <article class="medium">
+    <div class="tablica"><span class="winieta">Co Tydzień</span></div>
+    <span class="od">Jaworzno od 1991 · Mysłowice od 2004</span>
+    <h3>Tygodnik „Co Tydzień”</h3>
+    <p>Lokalna gazeta z publicystyką i informacją, wydawana nieprzerwanie od pierwszego numeru z 4 kwietnia 1991 roku.</p>
+    <ul><li>Wydanie papierowe i e-wydanie</li><li>Reklama modułowa i ogłoszenia</li></ul>
+    <a class="lnk" href="#kontakt">Reklama w tygodniku →</a>
+   </article>
+   <article class="medium">
+    <div class="tablica ciemna"><img src="img/logo-jaw.webp" width="600" height="191" alt="jaw.pl" loading="lazy"></div>
+    <span class="od">Od 2009 roku</span>
+    <h3>Portal jaw.pl</h3>
+    <p>Codzienne wiadomości z Jaworzna: newsy, fotorelacje i wywiady wideo, na bieżąco przez całą dobę.</p>
+    <ul><li>Kampanie banerowe</li><li>Artykuły sponsorowane</li></ul>
+    <a class="lnk" href="https://www.jaw.pl" rel="noopener">Przejdź do jaw.pl →</a>
+   </article>
+   <article class="medium">
+    <div class="tablica"><img src="img/logo-ctmyslowice.webp" width="600" height="154" alt="ctmyslowice.pl" loading="lazy"></div>
+    <span class="od">Od 2014 roku</span>
+    <h3>Portal ctmyslowice.pl</h3>
+    <p>Wiadomości z Mysłowic, Imielina i Chełmu Śląskiego, prowadzone przez redakcję mysłowickiego „Co Tygodnia”.</p>
+    <ul><li>Kampanie banerowe</li><li>Artykuły sponsorowane</li></ul>
+    <a class="lnk" href="https://www.ctmyslowice.pl" rel="noopener">Przejdź do ctmyslowice.pl →</a>
+   </article>
+   <article class="medium">
+    <div class="tablica"><img src="img/logo-dlaciebie.webp" width="600" height="151" alt="Telewizja dlaCiebie.tv" loading="lazy"></div>
+    <span class="od">Koncesja KRRiT od 2001 roku</span>
+    <h3>Telewizja dlaCiebie.tv</h3>
+    <p>Całodobowy program z informacjami z miast regionu: transmisje na żywo, magazyny i reportaże.</p>
+    <ul><li>Spoty reklamowe</li><li>Wideo do mediów społecznościowych</li></ul>
+    <a class="lnk" href="https://dlaciebie.tv" rel="noopener">Oglądaj dlaCiebie.tv →</a>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section class="sek szary" id="reklama">
+ <div class="wrap">
+  <div class="sek-tyt"><hr class="lam"><h2>Reklama, którą czytają sąsiedzi</h2><p>Dobierzemy kanał do tego, kogo chcą Państwo zaprosić: czytelników tygodnika, internautów czy widzów telewizji. Albo wszystkich naraz.</p></div>
+  <div class="formaty">
+   <div class="format"><span class="nr">01</span><h3>Ogłoszenie w tygodniku</h3><p>Reklama modułowa i ogłoszenia w wydaniu Jaworzno lub Mysłowice, w wersji papierowej i e-wydaniu.</p></div>
+   <div class="format"><span class="nr">02</span><h3>Banery na portalach</h3><p>Kampanie banerowe na jaw.pl i ctmyslowice.pl, widoczne przy codziennych wiadomościach.</p></div>
+   <div class="format"><span class="nr">03</span><h3>Artykuł sponsorowany</h3><p>Tekst o Państwa firmie lub wydarzeniu, przygotowany razem z redakcją portalu.</p></div>
+   <div class="format"><span class="nr">04</span><h3>Spot w telewizji</h3><p>Produkcja i emisja spotu w dlaCiebie.tv oraz wersje wideo do mediów społecznościowych.</p></div>
+   <div class="format"><span class="nr">05</span><h3>Transmisje i reportaże</h3><p>Transmisja na żywo, magazyn albo reportaż z Państwa wydarzenia.</p></div>
+   <div class="format pakiet"><span class="nr">+</span><h3>Pakiet prasa, portal i TV</h3><p>Jedna kampania we wszystkich naszych mediach, ustalona z jednym opiekunem.</p><a class="btn zolty" href="#kontakt">Zapytaj o pakiet</a></div>
+  </div>
+ </div>
+</section>
+
+<section class="sek" id="lamy">
+ <div class="wrap">
+  <div class="sek-tyt"><hr class="lam"><h2>Z naszych łamów</h2><p>Miasto widziane z bliska: inwestycje, ludzie, wydarzenia. Przesuń palcem albo myszą.</p></div>
+  <div class="gal" id="gal">
+   <figure><img src="img/aura-park.webp" width="1200" height="646" alt="Wizualizacja centrum handlowego w Jaworznie" loading="lazy"></figure>
+   <figure><img src="img/gala.webp" width="1200" height="646" alt="Gala z wręczeniem nagród na scenie" loading="lazy"></figure>
+   <figure><img src="img/jarmark.webp" width="1200" height="646" alt="Świąteczny Przystanek na Rynku w Jaworznie" loading="lazy"></figure>
+   <figure><img src="img/hala.webp" width="1200" height="646" alt="Hala sportowa w Jaworznie" loading="lazy"></figure>
+   <figure><img src="img/osiedle.webp" width="1200" height="646" alt="Nowe domy w Jaworznie" loading="lazy"></figure>
+   <figure><img src="img/drogowcy.webp" width="1200" height="646" alt="Remont drogi w mieście" loading="lazy"></figure>
+  </div>
+  <div class="gal-nav"><button type="button" data-k="-1" aria-label="Poprzednie zdjęcie">←</button><button type="button" data-k="1" aria-label="Następne zdjęcie">→</button></div>
+  <p class="zrodlo">Zdjęcia z portalu jaw.pl.</p>
+ </div>
+</section>
+
+<section class="sek szary" id="historia">
+ <div class="wrap">
+  <div class="sek-tyt"><hr class="lam"><h2>Od pierwszego numeru do telewizji</h2><p>Ta sama misja od 1991 roku: służyć mieszkańcom rzetelną informacją.</p></div>
+  <div class="hist">
+   <div class="rok"><b>1991</b><h3>Pierwszy numer</h3><p>4 kwietnia ukazuje się pierwszy „Co Tydzień” w Jaworznie.</p></div>
+   <div class="rok wyr"><b>2000</b><h3>Gazeta Dziesięciolecia</h3><p>Tytuł przyznany przez Instytut na Rzecz Demokracji w Europie Wschodniej (IDEE).</p></div>
+   <div class="rok"><b>2001</b><h3>Koncesja KRRiT</h3><p>Całodobowy program telewizji kablowej.</p></div>
+   <div class="rok"><b>2004</b><h3>Mysłowice</h3><p>Rusza „Co Tydzień” w Mysłowicach.</p></div>
+   <div class="rok"><b>2009</b><h3>jaw.pl</h3><p>Start portalu z wiadomościami z Jaworzna.</p></div>
+   <div class="rok"><b>2014</b><h3>ctmyslowice.pl</h3><p>Portal dla Mysłowic i okolic.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="sek ciemna-sek" id="technologie">
+ <div class="wrap">
+  <div class="sek-tyt"><hr class="lam"><h2>3D i hologramy</h2><p>Poza mediami realizujemy prezentacje w technologii 3D: na eventy, konferencje, targi i do materiałów firmowych.</p></div>
+  <div class="tech">
+   <div><b>01</b><h3>Hologramy osób</h3><p>Pełnowymiarowe projekcje postaci w skali 1:1 na wydarzeniach i prezentacjach.</p></div>
+   <div><b>02</b><h3>Hologramy produktów</h3><p>Maszyny, urządzenia i towary pokazane w 3D, bez przywożenia ich na miejsce.</p></div>
+   <div><b>03</b><h3>Filmy 3D</h3><p>Materiały wideo w technologii trójwymiarowej do celów edukacyjnych i promocyjnych.</p></div>
+   <div><b>04</b><h3>Wirtualne spacery</h3><p>Obiekty, firmy i przestrzenie miejskie do obejrzenia w interaktywnym spacerze 3D.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="sek" id="kontakt">
+ <div class="wrap">
+  <div class="sek-tyt"><hr class="lam"><h2>Kontakt z wydawnictwem</h2><p>Reklama, temat dla reportera albo współpraca przy projekcie 3D: napiszą Państwo do właściwej redakcji albo zadzwonią do biura.</p></div>
+  <div class="kontakt">
+   <div>
+    <ul class="dane">
+     <li><span>Siedziba</span><div>Wydawnictwo GM Sp. z o.o.<br>ul. św. Barbary 7, 43-600 Jaworzno</div></li>
+     <li><span>Biuro i redakcja</span><a href="tel:+48327519130">32 751 91 30</a></li>
+     <li><span>Co Tydzień</span><a href="mailto:biuro@ct.jaworzno.pl">biuro@ct.jaworzno.pl</a></li>
+     <li><span>Portal jaw.pl</span><a href="mailto:portal@jaw.pl">portal@jaw.pl</a></li>
+     <li><span>dlaCiebie.tv</span><a href="mailto:redakcja@dlaciebie.tv">redakcja@dlaciebie.tv</a></li>
+    </ul>
+    <iframe class="mapa" title="Mapa dojazdu: ul. św. Barbary 7, Jaworzno" src="https://maps.google.com/maps?q=Wydawnictwo%20GM%2C%20%C5%9Bw.%20Barbary%207%2C%2043-600%20Jaworzno&amp;z=16&amp;output=embed" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </div>
+   <form class="zap" id="zap" novalidate>
+    <h3>Zapytanie o reklamę</h3>
+    <p>Odpowiemy mailowo z propozycją i terminami.</p>
+    <div class="dwa">
+     <div class="pole"><label for="f-imie">Imię i nazwisko / firma</label><input id="f-imie" name="imie" autocomplete="name"></div>
+     <div class="pole"><label for="f-mail">E-mail</label><input id="f-mail" name="mail" type="email" autocomplete="email"></div>
+    </div>
+    <div class="pole"><label for="f-dzial">Czego dotyczy</label>
+     <select id="f-dzial" name="dzial"><option>Pakiet prasa, portal i TV</option><option>Tygodnik „Co Tydzień”</option><option>Portale jaw.pl / ctmyslowice.pl</option><option>Telewizja dlaCiebie.tv</option><option>3D, spacery i hologramy</option><option>Temat dla redakcji</option></select></div>
+    <div class="pole"><label for="f-tresc">Wiadomość</label><textarea id="f-tresc" name="tresc"></textarea></div>
+    <label class="zgoda"><input type="checkbox"> Zgadzam się na kontakt w sprawie zapytania.</label>
+    <button class="btn" type="submit">Wyślij zapytanie</button>
+    <p class="info" id="info" aria-live="polite"></p>
+   </form>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <div class="stopka">
+   <div><h4>Wydawnictwo GM Sp. z o.o.</h4><p style="color:#AEB7C4;margin:0">ul. św. Barbary 7, 43-600 Jaworzno<br>KRS 0000046719 · NIP 632-10-01-880</p></div>
+   <div><h4>Media</h4><ul><li><a href="#media">Co Tydzień</a></li><li><a href="https://www.jaw.pl" rel="noopener">jaw.pl</a></li><li><a href="https://www.ctmyslowice.pl" rel="noopener">ctmyslowice.pl</a></li><li><a href="https://dlaciebie.tv" rel="noopener">dlaCiebie.tv</a></li></ul></div>
+   <div><h4>Kontakt</h4><ul><li><a href="tel:+48327519130">32 751 91 30</a></li><li><a href="mailto:biuro@ct.jaworzno.pl">biuro@ct.jaworzno.pl</a></li></ul></div>
+  </div>
+  <div class="dol"><span>© 2026 Wydawnictwo GM Sp. z o.o.</span>
+<style>
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+</style>
+<a class="wylinka-badge" href="https://wylinka.pl/?utm_source=ct.jaworzno.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+  </div>
+ </div>
+</footer>
+<script>
+(function(){
+ var b=document.querySelector('.burger'),m=document.getElementById('menu');
+ b.addEventListener('click',function(){var o=m.classList.toggle('otw');b.setAttribute('aria-expanded',o)});
+ m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.remove('otw');b.setAttribute('aria-expanded',false)}});
+ var g=document.getElementById('gal');
+ document.querySelectorAll('.gal-nav button').forEach(function(x){x.addEventListener('click',function(){g.scrollBy({left:(+x.dataset.k)*g.querySelector('figure').offsetWidth,behavior:'smooth'})})});
+ var d=false,sx=0,sl=0;
+ g.addEventListener('mousedown',function(e){d=true;sx=e.pageX;sl=g.scrollLeft;g.classList.add('ciag')});
+ window.addEventListener('mouseup',function(){if(d){d=false;g.classList.remove('ciag')}});
+ g.addEventListener('mousemove',function(e){if(!d)return;e.preventDefault();g.scrollLeft=sl-(e.pageX-sx)});
+ document.getElementById('zap').addEventListener('submit',function(e){e.preventDefault();document.getElementById('info').textContent='To podgląd: na docelowej stronie formularz wyśle wiadomość do wydawnictwa.'});
+})();
+</script>
+</body>
+</html>
